@@ -4,13 +4,15 @@
   </header>
   <form>
     <label for="pensamento"> Pensamento</label>
-    <input type="textarea" class="input" id="pensamento" name="pensamento" placeholder="Digite o pensamento">
+    <input type="textarea" class="input" id="pensamento" name="pensamento" placeholder="Digite o pensamento" [value]="pensamento.conteudo">
 
     <label for="autoria"> Autoria</label>
-    <input type="text" class="input" id="autoria" name="autoria" placeholder="Digite a autoria">
+    <input type="text" class="input" id="autoria" name="autoria" placeholder="Digite a autoria" [value]="pensamento.autoria">
 
   <div class="container-radio">
+
     <!-- Modelo 1 -->
+
     <div class="radio-modelo">
       <label for="modelo1">
         <input type="radio" id="modelo1" value="modelo1" name="modelo-card">
@@ -22,11 +24,13 @@
       Prévia:
       <div class="modelo modelo1 ff-roboto-mono">
         <img src="assets/Imagens/modelo1.png" alt="Aspas azuis">
-        <p class="conteudo"> Aqui vai o conteúdo </p>
-        <p class="conteudo"> <br>Aqui vai a autoria </p>
+        <p class="conteudo"> {{ pensamento.conteudo }} </p>
+        <p class="autoria"> <br>{{ pensamento.autoria }} </p>
       </div>
     </div>
+
     <!-- Modelo 2 -->
+
     <div class="radio-modelo">
       <label for="modelo2">
         <input type="radio" id="modelo2" value="modelo2" name="modelo-card">
@@ -38,11 +42,13 @@
       Prévia:
       <div class="modelo modelo2 ff-roboto-mono">
         <img src="assets/Imagens/modelo2.png" alt="Aspas claro">
-        <p class="conteudo"> Aqui vai o conteúdo </p>
-        <p class="conteudo"> <br>Aqui vai a autoria </p>
+        <p class="conteudo"> {{ pensamento.conteudo }} </p>
+        <p class="autoria"> <br>{{ pensamento.autoria }} </p>
       </div>
     </div>
+
     <!-- Modelo 3 -->
+
     <div class="radio-modelo">
       <label for="modelo3">
         <input type="radio" id="modelo3" value="modelo3" name="modelo-card">
@@ -54,8 +60,8 @@
       Prévia:
       <div class="modelo modelo3 ff-roboto-mono">
         <img src="assets/Imagens/modelo3.png" alt="Aspas verdes">
-        <p class="conteudo"> Aqui vai o conteúdo </p>
-        <p class="conteudo"> <br>Aqui vai a autoria </p>
+        <p class="conteudo"> {{ pensamento.conteudo }} </p>
+        <p class="autoria"> <br>{{ pensamento.autoria }} </p>
       </div>
     </div>
   </div>
