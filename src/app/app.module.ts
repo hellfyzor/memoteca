@@ -4,8 +4,10 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { CabecalhoComponent } from './Components/cabecalho/cabecalho.component';
 import { RodapeComponent } from './Components/rodape/rodape.component';
-import { CriarPensamentoComponent } from './components/pensamentos/criar-pensamento/criar-pensamento.component';
-import {ReactiveFormsModule} from "@angular/forms";
+
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+import {AppRoutingModule} from "./app-routing.module";
+import {CriarPensamentoComponent} from "./Components/pensamentos/criar-pensamento/criar-pensamento.component";
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import {ReactiveFormsModule} from "@angular/forms";
   ],
     imports: [
         BrowserModule,
-        ReactiveFormsModule
+        ReactiveFormsModule,
+        FormsModule,
+        AppRoutingModule
     ],
   providers: [],
   bootstrap: [AppComponent]
