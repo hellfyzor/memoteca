@@ -1,21 +1,18 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
 import {RouterModule, Routes} from "@angular/router";
 import {CriarPensamentoComponent} from "./Components/pensamentos/criar-pensamento/criar-pensamento.component";
+import {ListarPensamentosComponent} from "./Components/pensamentos/listar-pensamentos/listar-pensamentos.component";
+
 
 const routes: Routes = [
-  { path: '', redirectTo: 'criarPensamento', pathMatch: "full"},
-  { path: 'criarPensamento', component: CriarPensamentoComponent}
+  { path: '', redirectTo: 'listarPensamento', pathMatch: 'full'},
+  { path: 'criarPensamento', component: CriarPensamentoComponent },
+  { path: 'listarPensamento', component: ListarPensamentosComponent }
   ];
 
 @NgModule({
-  declarations: [],
-  imports: [
-    CommonModule,
-    RouterModule.forRoot(routes)
-  ],
-  exports: [
-    RouterModule
-  ]
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule]
 })
+
 export class AppRoutingModule { }

@@ -1,0 +1,40 @@
+{
+  "pensamentos": [
+    {
+      "id": 1,
+      "conteudo": "Que bom que você veio.",
+      "autor": "Márcio",
+      "modelo": "modelo2"
+    },
+    {
+      "id": 2,
+      "conteudo": "O Márcio é realmente uma delicia!",
+      "autor": "Katarina",
+      "modelo": "modelo3"
+    },
+    {
+      "id": 3,
+      "conteudo": "Obscure Death é uma excelente banda.",
+      "autor": "Suellen",
+      "modelo": "modelo1"
+    },
+    {
+      "id": 4,
+      "conteudo": "O Márcio tem que upar o Druida",
+      "autoria": "Cleiton",
+      "modelo": "modelo2"
+    },
+    {
+      "id": 5,
+      "conteudo": "O Hellfyzor vai ficar muito forte hoje ainda",
+      "autoria": "Márcio",
+      "modelo": "modelo1"
+    },
+    {
+      "id": 6,
+      "conteudo": "O Márcio tem que upar o Druida",
+      "autoria": "Márcio",
+      "modelo": "modelo3"
+    }
+  ]
+}

@@ -8,20 +8,28 @@ import { RodapeComponent } from './Components/rodape/rodape.component';
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {AppRoutingModule} from "./app-routing.module";
 import {CriarPensamentoComponent} from "./Components/pensamentos/criar-pensamento/criar-pensamento.component";
+import {ListarPensamentosComponent} from "./Components/pensamentos/listar-pensamentos/listar-pensamentos.component";
+import { PensamentoComponent } from './Components/pensamento/pensamento.component';
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
     CabecalhoComponent,
     RodapeComponent,
-    CriarPensamentoComponent
+    CriarPensamentoComponent,
+    ListarPensamentosComponent,
+    PensamentoComponent
+
   ],
-    imports: [
-        BrowserModule,
-        ReactiveFormsModule,
-        FormsModule,
-        AppRoutingModule
-    ],
+  imports: [
+    BrowserModule,
+    ReactiveFormsModule,
+    FormsModule,
+    AppRoutingModule
+
+  ],
   providers: [],
   bootstrap: [AppComponent]
 })
